@@ -1,0 +1,246 @@
+@font-face {
+    font-family: "Netflix";
+    src: url(../../font/AvenirNextCondensed.ttc);
+font-weight: 400;
+font-style: normal;
+}
+@font-face{
+    font-family: "Netflix";
+    src: url(../../font/AvenirNext.ttc);
+font-weight: 400;
+font-style: normal;
+}
+
+.credits{
+  font-family: system-ui;
+  background: black;
+  font-size: 11px;
+  color:white;
+  padding: 0.5rem 0;
+  text-decoration:none ;
+}
+.credits a {
+  color:fuchsia;
+  text-decoration: none;
+}
+body{
+    background: black;
+    color: white;
+    display: flex;
+    font-family: Netflix;
+    padding-bottom: 40px;
+  }
+
+.featured{
+  overflow: hidden;
+  /* border: 1px solid blueviolet;*/
+  margin: 0%;
+  width: 1335px;
+  height: 1150px;
+
+}
+.caja{
+   /* border:1px solid red;*/
+    padding: 0;
+    margin: 25px;
+    width: 1220px;
+    height: 150px;
+    overflow-y: scroll;
+ 
+    
+  }
+
+  .tags {
+    /* border: 1px solid red;
+     /*justify-content: center;
+     list-style: none;
+     padding: 0;*/
+    /* margin-right: 25px;*/
+    width: 1250px;
+    height: 30px;
+     display: flex;
+     list-style: none;
+     gap: 350px;
+     position: relative;
+    bottom: 0px;
+    left: 1px;
+    right: 1px;
+  
+ }
+
+ .featured-actions{
+  /* border: 1px solid blue;*/
+  /*box-sizing: content-box;*/
+  width: 700px;
+  height: 200px;
+  display: flex;
+  position: relative;
+  /*justify-content: "center";¨*/
+  align-items: center;
+  padding: 10px;
+  padding-bottom:1em;
+  margin-left: auto;
+  margin-right: auto;
+ }
+ 
+  .button-secondary {
+    height:60px ;
+    width: 500px;
+    margin: 5px;
+    background: rgb(77, 69, 69);
+    font-size: 1.3em;
+    border: none;
+    border-radius: 4px;
+    
+    
+   /* border: 1px solid red;*/
+   
+
+}
+
+.button-secondary::before {
+    content: "";
+    display: inline-flex;
+   /* border: 1px solid greenyellow;*/
+    justify-content: center;
+    /*align-items: center;*/
+    height: 26px;
+    width: 26px;
+  }
+ ul {
+    list-style-type:none ;
+  
+  }
+  
+
+ .icon-dowload::before{
+  background: url(../../icons/dowload.svg)
+
+}
+
+
+.icon-play{
+  content: "";
+
+}
+.icon-play::before{
+  background: url(../../icons/play.svg)
+}
+
+.list {
+  text-decoration: none;
+
+}
+ .list-0{
+  text-decoration: none;
+  width: 700px;
+  height: 60px;
+  display: grid;
+  grid-auto-columns: 150px;
+  grid-auto-flow: column;
+ /*  border: 1px solid green;*/
+  list-style: none;
+  margin-left: 10px;
+  overflow: hidden;
+  
+}
+
+.list-0 a{
+  color: aliceblue;
+  text-decoration: none;
+  display: flex;
+  margin: auto;
+ /* border: 1px solid red;*/
+  padding-inline: 2px;
+  
+  
+
+}
+
+.list-1{
+ /*  border: 1px solid blue;*/
+  height: 60px;
+  width: 100px;
+}
+
+
+.list-content{
+  /* border: 1px solid yellow;*/
+    padding: 0;
+  margin: 25px;
+  width: 1340px;
+  height: 311px;
+  overflow: auto;
+  white-space: nowrap;
+  position: relative;
+
+  
+}
+
+.list-item {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.list-item:first-child {
+  margin: 0;
+}
+
+.unique {
+  /*border: 1px solid red;*/
+  padding: 0 1em;
+}
+
+
+
+.footer{
+  /*border: 1px solid red;*/
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: black;
+  padding: 1em 0 0;
+
+}
+
+.tab-list {
+ /* border: 1px solid green;*/
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-auto-flow: column;
+  list-style: none;
+}
+
+.tab-list a{ 
+  color: #6e6e6e;
+  text-decoration: none;
+}
+
+.tab-item {
+ /* border: 1px solid blue;*/
+  text-align: center;
+  ;
+}
+
+.tab-item svg{
+ /* border: 1px solid lawngreen;*/
+  margin: auto;
+  display: block ;
+}
+
+.tab-item :hover path {
+fill: white;
+}
+
+.tab-item :hover :is(path, span){
+  color: white;
+  fill: white;
+}
+
+.tab-item path{
+ fill: #6e6e6e;
+}
+
+
